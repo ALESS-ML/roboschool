@@ -117,9 +117,9 @@ class RoboschoolForwardWalker(SharedMemoryClientEnv):
         joints_at_limit_cost = float(self.joints_at_limit_cost * self.joints_at_limit)
 
         self.rewards = [
-            alive,
-            progress,
-            electricity_cost,
+            alive*2,
+            progress/2,
+            electricity_cost*2,
             joints_at_limit_cost,
             feet_collision_cost
             ]
