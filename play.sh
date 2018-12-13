@@ -1,0 +1,1 @@
+python -m baselines.run --alg=ppo2 --env=RoboschoolWalker2d-v1  --network=mlp --num_timesteps=0 --num_env=1 --load_path=./${1}/bipedal_ppo2 --ent_coef=0.1 --num_hidden=200 --num_layers=3 --value_network=copy --seed 857139269 --play
